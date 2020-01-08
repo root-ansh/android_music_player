@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/orange100</color>
+    <color name="colorPrimaryDark">@color/orange120</color>
+    <color name="colorAccent">@color/orange60</color>
+
+    <color name="orange100">#FFA400</color>
+    <color name="orange120">#FF5900</color>
+    <color name="orange60">#FFC366</color>
+
+    <color name="black">#000</color>
+    <color name="white100">#fff</color>
+    <color name="orange005">#FFFBF8</color>
+</resources>

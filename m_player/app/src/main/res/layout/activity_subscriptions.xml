@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/orange005"
+    android:padding="8dp"
+
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/ic_sun_orange"
+                android:src="@drawable/ic_music_note_black"
+                android:tint="@color/white100"
+                android:scaleType="fitXY"
+                android:padding="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="32dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_single_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Single Song:"
+                    android:textSize="16sp"
+                    android:textColor="@color/orange100"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white100"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+
+                        >
+                        <TextView
+                            android:id="@+id/tv_single_song_subs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            tools:text="afreen afreen | by Rahat fateh ali khan"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:text="One Time Download of a complete file,\nAvailable forever"
+                            />
+
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/bt_single_song"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy @ $1.00/-"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_orange_squiricle_4dp"
+                        android:textColor="@android:color/white"
+                        android:padding="16dp"
+                        android:textSize="12dp"
+                        android:layout_margin="8dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Monthly Subscription:"
+                    android:textSize="16sp"
+                    android:textColor="@color/orange100"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white100"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="All songs, unlimited downloads, downloads will expire after subsription ends"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/bt_monthly_sub"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy @ $10.00/- per month"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_orange_squiricle_4dp"
+                        android:textColor="@android:color/white"
+                        android:padding="16dp"
+                        android:textSize="12dp"
+                        android:layout_margin="8dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Yearly Subscription(@20% discount!):"
+                    android:textSize="16sp"
+                    android:textColor="@color/orange100"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white100"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="All songs, unlimited downloads for 1 year + 2 months free, downloads will expire after subsription ends"
+                        android:textColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/bt_annually_sub"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy @ $120.00/- for 14 months"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_orange_squiricle_4dp"
+                        android:textColor="@android:color/white"
+                        android:padding="16dp"
+                        android:textSize="12dp"
+                        android:layout_margin="8dp"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
